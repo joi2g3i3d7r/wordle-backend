@@ -28,8 +28,7 @@ export const validateRoleMiddleware = (role: UserGrantType) => async (req: Reque
     next();
   } catch (error) {
     console.error(error);
+    res.status(401).send('Error on verify token');
   }
-
-  res.status(401).send('Error on verify token');
 }
 
