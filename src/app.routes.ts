@@ -5,7 +5,7 @@ const router = Router();
 
 router.post('/users', createUserHandler);
 
-router.get('/unique-word', getUniqueWordHandler);
-router.post('/validate-word', validateWordHandler);
+router.get('/game/word', getUniqueWordHandler);
+router.put('/game/word', validateWordHandler);
 
 export default router;
